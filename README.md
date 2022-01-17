@@ -9,3 +9,6 @@ At portrait the height becomes 800 and width becomes 1280
 the planet Axis was set by the virtue of landscape mode , thus when in portrait the x and y Axis also change resulting in mis-calculations 
 
 this will be fixed soon 
+
+# The solution 
+Solution for this problem *for now* is to swtich from protrait to landscape and refreshing the page.
