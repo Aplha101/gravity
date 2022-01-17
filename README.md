@@ -1,5 +1,7 @@
 # gravity
 
+reccomended for bigger screen sizes
+
 ## Issue - planets spinning anticlockwise
 This is because of the difference of screen sizes between portrait and landscape...
 lets assume a device that is 1280×800
@@ -11,4 +13,4 @@ the planet Axis was set by the virtue of landscape mode , thus when in portrait 
 this will be fixed soon 
 
 # The solution 
-Solution for this problem *for now* is to swtich from protrait to landscape and refreshing the page.
+Solution for this problem *for now* is to swtich from protrait to landscape and refreshing the page and also switching to desktop mode in chrome.
