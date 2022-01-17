@@ -21,15 +21,16 @@
   
     <script>
 function Prompt(){
-  swal("Planets spinning anticlockwise?...read more")
-.then((res) => {
+  swal("Planets spinning anticlockwise? click OK to read more else click outside the box to cancle").then((res) => {
   if(res != null){
-    window.location.href = "info.html";
+    window.location.href = "https://github.com/Aplha101/gravity/blob/main/README.md";
   }
   //swal(`The returned value is: ${value}`);
 });
 }
-window.onload = Prompt()</script>
+setTimeout(() => {
+  window.onload = Prompt()
+} , 1000)
   </div>
 </body>
 </html>

@@ -32,6 +32,7 @@ let sun = { //the sun remains fixed
 
 function Draw() {
   ctx.clearRect(0, 0, space.width, space.height)
+  
   //sun
   ctx.strokeStyle ="yellow"
   ctx.fillStyle ="yellow"
@@ -65,9 +66,10 @@ function Distance(body1, body2) {
   //gravity formula GM1M2/r²
 let Gravitation = G * ((sun.mass * planet2.mass) / (Math.pow(Distance(sun, planet2) , 2)))
 let gravitation = G * ((sun.mass * planet.mass) / (Math.pow(Distance(sun, planet), 2)))
+
 setInterval(() => {
   Draw()
-  
+    
   let direction = { 
     x: sun.x - planet.x,
     y: sun.y - planet.y
@@ -87,5 +89,6 @@ setInterval(() => {
 
   planet.x += planet.vector.x
   planet.y += planet.vector.y
- 
+  
 }, 17);
+
