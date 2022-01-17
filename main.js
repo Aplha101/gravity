@@ -6,6 +6,7 @@ space.width = window.innerWidth - 4;
 space.height = window.innerHeight - 4;
 let ctx = space.getContext('2d')
 //bodies
+
 let planet = { //farthest planet
   mass: 10,
   x: (space.width / 2 ) - 250,
@@ -17,8 +18,8 @@ let planet = { //farthest planet
 }
 let planet2 ={ //closest planet
   mass  : 20,
-  x : (space.width / 2) - 100,
-  y : (space.width/2) - 100,
+  x : (space.width / 2) - 175,
+  y : (space.width/2) - 150,
   vector: {
     x:7,
     y:7
@@ -28,6 +29,9 @@ let sun = { //the sun remains fixed
   mass: 7000,
   x: space.width / 2,
   y: space.height / 2,
+}
+if(window.innerHeight > window.innerWidth){
+  planet2.y = (space.height / 2 ) + 100
 }
 
 function Draw() {
@@ -91,4 +95,10 @@ setInterval(() => {
   planet.y += planet.vector.y
   
 }, 17);
-
+let data = {
+  "planet1" : gravitation,
+  "planet2": Gravitation
+}
+setTimeout(() => {
+  console.table(data)
+},1000)
