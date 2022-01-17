@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="div">
+  <canvas id="space"></canvas>
+  <script src="main.js"></script>
+  
+    <script>
+function Prompt(){
+  swal("Planets spinning anticlockwise?...read more")
+.then((res) => {
+  if(res != null){
+    window.location.href = "info.html";
+  }
+  //swal(`The returned value is: ${value}`);
+});
+}
+window.onload = Prompt()</script>
+  </div>
+</body>
+</html>
